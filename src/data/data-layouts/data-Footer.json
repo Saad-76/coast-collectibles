@@ -1,0 +1,15 @@
+[
+    {    
+        "iconsData" :[
+            {"icoClass":"fa fa-facebook-f",
+            "link":"https://www.facebook.com/Coast-Collectibles-106963995232570/"},
+           
+            {"icoClass":"fa fa-instagram", "link":"https://www.facebook.com/Coast-Collectibles-106963995232570/"}        
+        ]
+    },
+    {    
+        "infoData":[
+            {"text":"contact@coastcollectibles"}
+        ]
+    }
+]
