@@ -87,6 +87,17 @@
     min-height: 64px;
     border-bottom: 0.1px solid #774589 !important;
 }
+.heading-fonts-faq{
+   
+    /* font-size: 15px;
+    letter-spacing: .3px;
+    font-weight: 600; */
+
+
+}
+.icon-color svg{
+    color: white;
+}
 
 .css-vubbuv{
     color: white;
