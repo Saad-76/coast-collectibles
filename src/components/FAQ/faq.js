@@ -20,7 +20,7 @@ export default function ControlledAccordions() {
         <InfoComponent
           titleSm="FREQUANTLY ASKED QUESTIONS
        "
-          titleLg="FAQs
+          titleLg="FAQ
               "
         />
       </div>

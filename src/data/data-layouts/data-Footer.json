@@ -4,12 +4,13 @@
             {"icoClass":"fa fa-facebook-f",
             "link":"https://www.facebook.com/Coast-Collectibles-106963995232570/"},
            
-            {"icoClass":"fa fa-instagram", "link":"https://www.facebook.com/Coast-Collectibles-106963995232570/"}        
+            {"icoClass":"fa fa-instagram", "link":"https://www.facebook.com/Coast-Collectibles-106963995232570/"}     ,
+            {"icoClass":"fa fa-twitter","link":"https://twitter.com/CoastCollectib1"}   
         ]
     },
     {    
         "infoData":[
-            {"text":"contact@coastcollectibles"}
+            {"text":"contact@coastcollectibles.com"}
         ]
     }
 ]
