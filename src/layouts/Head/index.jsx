@@ -19,6 +19,8 @@ import TopCollectionsContainer from "../../components/TopCollections/index";
 import ListedItemsContainer from "../../components/ListedItems/index";
 import Footer from "../Footer/index";
 import AboutUs from "../../components/About/aboutUs";
+import FAQ from "../../components/FAQ/faq";
+
 import Subscribe from "../../components/Subscribe/subscribe";
 import ComingSoon from "../../components/ComingSoon/comingSoon";
 
@@ -142,12 +144,18 @@ function Head({ Title }) {
 
         <section id="team">
           <ListedItemsContainer />
+          
         </section>
         <section id="getstarted">
+
           <GetStarted />
+          <FAQ/>
+
         </section>
 
         <section id="contactus">
+          <ComingSoon/>
+          <Subscribe/>
           {/* <Subscribe /> */}
           <Footer />
         </section>

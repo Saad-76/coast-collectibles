@@ -15,6 +15,7 @@ import GetStartedVideo from "../../assets/img/test-img/GetStartedVideo.mp4";
 import MindSectionInfo from "../mindSectionInfo/mindSectionInfo";
 import Subscribe from "../Subscribe/subscribe";
 import ComingSoon from "../ComingSoon/comingSoon";
+import FAQ from "../FAQ/faq"
 
 
 const GetStarted = () => {
@@ -131,8 +132,9 @@ const GetStarted = () => {
 "
       /> */}
       </div>
-<ComingSoon/>
-      <Subscribe />
+      {/* <FAQ/> */}
+{/* <ComingSoon/>
+      <Subscribe /> */}
     </>
   );
 };
