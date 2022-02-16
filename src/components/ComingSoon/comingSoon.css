@@ -12,7 +12,8 @@
 
 }
 .comingSoon-main-style{
-  padding: 80px 0px;
+  /* padding: 80px 0px; */
+  padding-top: 80px;
 }
 .image-section-outer-style{
     display: flex;

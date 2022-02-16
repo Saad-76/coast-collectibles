@@ -16,7 +16,7 @@ export default function ControlledAccordions() {
 
   return (
     <>
-      <div className="faq-top-head">
+    <div className="faq-main-section">      <div className="faq-top-head">
         <InfoComponent
           titleSm="FREQUANTLY ASKED QUESTIONS
        "
@@ -129,6 +129,7 @@ export default function ControlledAccordions() {
             </Typography>
           </AccordionDetails>
         </Accordion>
+
         <Accordion
           expanded={expanded === "pane15"}
           onChange={handleChange("pane15")}
@@ -152,7 +153,102 @@ export default function ControlledAccordions() {
             </Typography>
           </AccordionDetails>
         </Accordion>
+
+        <Accordion
+          expanded={expanded === "pane16"}
+          onChange={handleChange("pane16")}
+        >
+          <AccordionSummary
+            className="icon-color"
+            expandIcon={<BsArrowUpRight size={16} />}
+            aria-controls="pane16bh-content"
+            id="pane16bh-header"
+          >
+            <Typography
+              className="heading-fonts-faq"
+              sx={{ width: "100%", flexShrink: 0 }}
+            >
+              6. What does it mean to buy a fraction?
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography>
+              Full Control: When you buy a fraction of our memorabilia you have
+              full control over the NFT that you own. The NFT will be stored in
+              your digital wallet and available to list on market places such as
+              OpenSea.
+              <br />
+              <br />
+
+              Fractional ownership: You will be a fractional owner of the
+              memorabilia that your NFT represents. The more fractions you
+              collect the more of the memorabilia you will own, giving you a
+              higher value in your assets.
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+
+        <Accordion
+          expanded={expanded === "pane17"}
+          onChange={handleChange("pane17")}
+        >
+          <AccordionSummary
+            className="icon-color"
+            expandIcon={<BsArrowUpRight size={16} />}
+            aria-controls="pane17bh-content"
+            id="pane17bh-header"
+          >
+            <Typography
+              className="heading-fonts-faq"
+              sx={{ width: "100%", flexShrink: 0 }}
+            >
+              7. What sets the price?
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography>
+              Market: The rarer the asset the higher the value. Depending on
+              which fraction of our memorabilia you buy will also determine the
+              price range which your fraction is valued at.
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+
+        <Accordion
+          expanded={expanded === "pane18"}
+          onChange={handleChange("pane18")}
+        >
+          <AccordionSummary
+            className="icon-color"
+            expandIcon={<BsArrowUpRight size={16} />}
+            aria-controls="pane18bh-content"
+            id="pane18bh-header"
+          >
+            <Typography
+              className="heading-fonts-faq"
+              sx={{ width: "100%", flexShrink: 0 }}
+            >
+              8. How do I get started?
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography>
+              Guide: It has now become very easy for people to start collecting
+              assets and fractional assets through NFTs. You will need to create
+              a profile on Opensea.io where you can explore and collect our
+              fractional NFTs.
+              <br />
+              <br />
+
+              Just a few clicks: After you have created your profile you are
+              then free to explore and buy our fractional NFTs with just a few
+              clicks and you will become a collector in no time!
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
       </div>
+      </div>
+
     </>
   );
 }

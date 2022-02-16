@@ -478,7 +478,7 @@ ol {
 }
 
 .section-heading {
-    padding-top: 50px;
+    /* padding-top: 50px; */
 
     position: relative;
     z-index: 1;

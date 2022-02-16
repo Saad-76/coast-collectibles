@@ -1,7 +1,9 @@
 .padding{
     padding-top: 2%;
 }
-
+.faq-main-section{
+    margin-top: -200px;
+}
 .css-1fjvggn-MuiPaper-root-MuiAccordion-root{
     background-color: #020c31 !important;
     margin: 18px;
@@ -106,11 +108,15 @@
     .container-style-faq{
         padding: 0px 140px;
     }
+    .faq-main-section {
+        margin-top: 118px;
+    }
   }
 @media only screen and (max-width: 700px) {
     .container-style-faq{
         padding: 0px 82px;
     }
+    
   }
 
   @media only screen and (max-width: 450px) {

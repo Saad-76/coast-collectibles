@@ -9,6 +9,8 @@
     "@mui/icons-material": "^5.4.1",
     "@mui/material": "^5.4.1",
     "@popperjs/core": "^2.9.3",
+    "@react-three/drei": "^8.10.0",
+    "@react-three/fiber": "^7.0.26",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
@@ -31,7 +33,8 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "sass": "^1.39.2",
-    "web-vitals": "^1.0.1"
+    "three": "^0.137.5",
+    "web-vitals": "^1.1.2"
   },
   "scripts": {
     "start": "react-scripts start",

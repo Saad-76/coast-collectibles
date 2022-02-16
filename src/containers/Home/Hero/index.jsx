@@ -71,7 +71,7 @@ const HeroContainer = () => {
                     </h3>
                   </div>
                   <h1>
-                    A New kind of brand that.
+                    A New kind of brand that
                     <span className="gradient-text">We build together</span>{" "}
                   </h1>
                   <p className="w-text">
@@ -109,7 +109,7 @@ const HeroContainer = () => {
                     </h3>
                   </div>
                   <h1>
-                    A new kind of brand that{" "}
+                    A new kind of brand that
                     <span className="gradient-text">We build together</span>{" "}
                   </h1>
                   <p className="w-text">

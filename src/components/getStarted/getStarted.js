@@ -16,47 +16,33 @@ import MindSectionInfo from "../mindSectionInfo/mindSectionInfo";
 import Subscribe from "../Subscribe/subscribe";
 import ComingSoon from "../ComingSoon/comingSoon";
 import FAQ from "../FAQ/faq"
+import PerspectiveCameraWrapper from "./prospectiveCamera"
 
 
 const GetStarted = () => {
-  let angle = 0;
-  let angle2 = 180;
+  // let angle = 0;
+  // let angle2 = 180;
 
-  window.onfocus = () => {
-    console.log("Got focused!!!")
-    angle = 0
-    angle2 = 180
-  }
+  // window.onfocus = () => {
+  //   console.log("Got focused!!!")
+  //   angle = 0
+  //   angle2 = 180
+  // }
 
-  function anim() {
-    const front = document.getElementById("front");
-    const back = document.getElementById("back");
+  // function anim() {
+  //   const front = document.getElementById("front");
+  //   const back = document.getElementById("back");
 
-    console.log("Angle Values")
-    console.log(angle, " ", angle2);
-    front.style.transform = "rotateY(" + angle2 + "deg)";
-    back.style.transform = "rotateY(" + angle + "deg)";
-    angle += 180;
-    angle2 += 180;
-    // if (angle >= 999999) {
-    //   // console.log(angle, " ", angle2);
-    //   angle = 0;
-    //   angle2 = 180;
-    // }
+  //   console.log("Angle Values")
+  //   console.log(angle, " ", angle2);
+  //   front.style.transform = "rotateY(" + angle2 + "deg)";
+  //   back.style.transform = "rotateY(" + angle + "deg)";
+  //   angle += 180;
+  //   angle2 += 180;
+  
+  // }
 
-    // if (front.style.transform === '') {
-    // }
-    // else if (front.style.transform === 'rotateY(180deg)') {
-    //     front.style.transform = "rotateY(360deg)";
-    //     back.style.transform = "rotateY(180deg)";
-    // } else {
-    //     front.style.transform = "rotateY(540deg)";
-    //     back.style.transform = "rotateY(360deg)";
-
-    // }
-  }
-
-  setInterval(() => anim(), 2000);
+  // setInterval(() => anim(), 2000);
 
   const routePath = useLocation();
   const onTop = () => {
@@ -80,23 +66,15 @@ const GetStarted = () => {
 
       <div className="row">
         <div className="container">
-          <div className="col-md-6">
+          <div className=" rotating-card">
+            <PerspectiveCameraWrapper/>
 
-
-          {/* <video
-            className="video_section-style"
-            src={GetStartedVideo}
-            loop={true}
-            muted={true}
-            autoPlay={true}
-          /> */}
-
-            <div class="card-style">
+            {/* <div class="card-style">
               <div id="front" class="card-side front ">
               </div>
               <div id="back" class="card-side back ">
               </div>
-            </div>
+            </div> */}
           </div>
           <div className=" get-Started-content">
             <h3> BROWSE OUR COLLECTION</h3>

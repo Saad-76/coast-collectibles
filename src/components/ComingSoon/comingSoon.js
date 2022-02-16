@@ -4,6 +4,14 @@ import "./comingSoon.css"
 import QuestionMark from "../../assets/img/test-img/QuestionMark.jpg"
 import Cube from 'react-3d-cube';
 
+import { Suspense, useState } from "react";
+import { Canvas } from "@react-three/fiber";
+import { Stage, OrbitControls,PerspectiveCamera } from "@react-three/drei";
+import * as THREE from "three";
+import Question from "./questionModel";
+import Model from "./symolModel"
+
+
 const ComingSoon=()=> {
     
 
@@ -14,9 +22,64 @@ const ComingSoon=()=> {
     <div className="col-md-6 comingSoon-content-style">
 <h5>COMING SOON...</h5>
     </div>
+    <div
+          className="col-md-6"
+          style={{ position: "relative", width: 500, height: 500 }}
+        >
+          
+          <Canvas
+            dpr={[1, 2]}
+            // camera={{
+            //   fov: 80,
+            //   zoom: 1,
+            //   near: 2,
+            //   far: 1000,
+          
+            // }}
+            // camera={{ fov: 75, position: [-10, 45, 20]}}
+          >
+             <PerspectiveCamera
+        makeDefault
+        // rotation={[Math.PI, 0, 0]}
+        fov={75}
+        position={[240, -420, 240]}
+        near={1}
+        far={1000}
+      ></PerspectiveCamera>
+            <color attach="background" args={["#03091f"]} />
+
+            <Suspense fallback={null}>
+              <Stage
+                environment={null}
+                intensity={1}
+                contactShadowOpacity={0.5}
+                shadowBias={-0.0015}
+              >
+                <mesh  position={[0, -80, 0]}  scale={10}>
+                {/* <Submarine  /> */}
+
+                </mesh>
+                {/* <Data/> */}
+{/* <Question/> */}
+<Model/>
+                {/* <ModelData /> */}
+              </Stage>
+            </Suspense>
+            <OrbitControls
+              autoRotate
+              enableZoom={false}
+              enablePan={false}
+              minPolarAngle={Math.PI / 2.8}
+              maxPolarAngle={Math.PI / 2.8}
+            />
+          </Canvas>
+        </div>
     <div >
-        <div className="image-section-outer-style">
-{/* <img  className="image-section-inner-style" src={QuestionMark} alt=""/> */}
+
+
+
+
+        {/* <div className="image-section-outer-style">
 <div>
       <center>
             <div>
@@ -52,7 +115,7 @@ const ComingSoon=()=> {
             </div>
         </center>
       </div>
-</div>
+</div> */}
     </div>
     </div>
 
