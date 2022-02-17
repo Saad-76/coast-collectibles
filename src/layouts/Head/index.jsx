@@ -134,26 +134,26 @@ function Head({ Title }) {
         </div>
       </nav>
 
-      <div>
-        <section id="home">
+      <div >
+        <section id="home" style={{overflow:"hidden"}}>
           <HeroContainer />
         </section>
-        <section id="aboutus">
+        <section id="aboutus" style={{overflow:"hidden"}}>
           <AboutUs />
         </section>
 
-        <section id="team">
+        <section id="team" style={{overflow:"hidden"}}>
           <ListedItemsContainer />
           
         </section>
-        <section id="getstarted">
+        <section id="getstarted" style={{overflow:"hidden"}}>
 
           <GetStarted />
           <FAQ/>
 
         </section>
 
-        <section id="contactus">
+        <section id="contactus" style={{overflow:"hidden"}}>
           <ComingSoon/>
           <Subscribe/>
           {/* <Subscribe /> */}

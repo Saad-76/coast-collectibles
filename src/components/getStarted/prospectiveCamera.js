@@ -12,6 +12,7 @@ import {
 import Model from "./model";
 import * as THREE from "three";
 // import Enviornment from "./enviornment";
+import "./getStarted.css"
 
 // import "../App.css";
 
@@ -38,55 +39,106 @@ const PerspectiveCameraWrapper = () => {
 
   return (
     <>
-    
 
-        <div
-          className="col-md-6"
-          style={{ position: "relative", width: 500, height: 800 }}
+      {/* pc  */}
+      <div
+        className="col-md-6 display-pc"
+        style={{ position: "relative", width: 500, height: 800 }}
+      >
+        <Canvas
+        // dpr={[1, 2]}
+        // camera={{
+        //   fov: 80,
+        //   zoom: 1,
+        //   near: 2,
+        //   far: 1000,
+        //   position: new THREE.Vector3(0, 10, 0)
+        // }}
+        // camera={{ fov: 90 }}
+        // position={[0, 10, 10]}
         >
-          <Canvas
-          // dpr={[1, 2]}
-          // camera={{
-          //   fov: 80,
-          //   zoom: 1,
-          //   near: 2,
-          //   far: 1000,
-          //   position: new THREE.Vector3(0, 10, 0)
-          // }}
-          // camera={{ fov: 90 }}
-          // position={[0, 10, 10]}
-          >
-            <PerspectiveCamera
-              makeDefault
-              // rotation={[Math.PI, 0, 0]}
-              fov={80}
-              position={new THREE.Vector3(0, 0, 50)}
-              near={1}
-              far={1000}
-            />
-            {/* <color attach="background" args={["midnightBlue"]} /> */}
+          <PerspectiveCamera
+            makeDefault
+            // rotation={[Math.PI, 0, 0]}
+            fov={80}
+            position={new THREE.Vector3(0, 0, 50)}
+            near={1}
+            far={1000}
+          />
+          {/* <color attach="background" args={["midnightBlue"]} /> */}
 
-            <Suspense fallback={null}>
-              <Stage
-                environment={null}
-                intensity={1}
-                contactShadowOpacity={0.5}
-                shadowBias={-0.0015}
-              >
-                <mesh scale={2}>
-                  <Model />
-                </mesh>
-              </Stage>
-            </Suspense>
-            <OrbitControls
-              autoRotate
-              enableZoom={false}
-              enablePan={false}
-              minPolarAngle={Math.PI / 2.05}
-              maxPolarAngle={Math.PI / 2.05}
-            />
-          </Canvas>
-        </div>
+          <Suspense fallback={null}>
+            <Stage
+              environment={null}
+              intensity={1}
+              contactShadowOpacity={0.5}
+              shadowBias={-0.0015}
+            >
+              <mesh scale={2}>
+                <Model />
+              </mesh>
+            </Stage>
+          </Suspense>
+          <OrbitControls
+            autoRotate
+            enableZoom={false}
+            enablePan={false}
+            minPolarAngle={Math.PI / 2.05}
+            maxPolarAngle={Math.PI / 2.05}
+          />
+        </Canvas>
+      </div>
+
+
+      {/* mobile  */}
+
+      <div
+        className="col-md-6 display-mobile"
+        style={{ position: "relative", width: 400, height: 800 }}
+      >
+        <Canvas
+        // dpr={[1, 2]}
+        // camera={{
+        //   fov: 80,
+        //   zoom: 1,
+        //   near: 2,
+        //   far: 1000,
+        //   position: new THREE.Vector3(0, 10, 0)
+        // }}
+        // camera={{ fov: 90 }}
+        // position={[0, 10, 10]}
+        >
+          <PerspectiveCamera
+            makeDefault
+            // rotation={[Math.PI, 0, 0]}
+            fov={80}
+            position={new THREE.Vector3(0, 0, 50)}
+            near={1}
+            far={1000}
+          />
+          {/* <color attach="background" args={["midnightBlue"]} /> */}
+
+          <Suspense fallback={null}>
+            <Stage
+              environment={null}
+              intensity={1}
+              contactShadowOpacity={0.5}
+              shadowBias={-0.0015}
+            >
+              <mesh scale={2}>
+                <Model />
+              </mesh>
+            </Stage>
+          </Suspense>
+          <OrbitControls
+            autoRotate
+            enableZoom={false}
+            enablePan={false}
+            minPolarAngle={Math.PI / 2.05}
+            maxPolarAngle={Math.PI / 2.05}
+          />
+        </Canvas>
+      </div>
 
     </>
   );

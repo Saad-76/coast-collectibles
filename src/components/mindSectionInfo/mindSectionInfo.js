@@ -22,7 +22,9 @@ const SectionInfo = ({
         <div className="row">
           <h2 className="heading-mindSection-style">{topHead}</h2>
           <div className="col-md-6 ">
+            <div className="col-sm-12 " id="center-img">
             <div className="image-mindSection-style">{img}</div>
+            </div>
           </div>
           <div className="col-md-6 content-mindSection-style">
             {titleSm ? <h3>{titleSm}</h3> : ""}
