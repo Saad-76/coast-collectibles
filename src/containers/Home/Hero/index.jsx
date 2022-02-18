@@ -73,7 +73,7 @@ const HeroContainer = () => {
               </div>
               <div className="col-sm-12">
                 <h1>
-                  A New kind of brand that
+                  A New kind of brand that<br/>
                   <span className="gradient-text">We build together</span>{" "}
                 </h1>
               </div>

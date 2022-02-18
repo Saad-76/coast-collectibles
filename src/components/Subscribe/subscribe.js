@@ -1,11 +1,11 @@
-import {React, useState} from "react";
+import { React, useState } from "react";
 import "./subscribe.css";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom"
 
 const Subscribe = () => {
-	const[ user, setUser]= useState({
-		email:"",
-	})
+  const [user, setUser] = useState({
+    email: "",
+  })
   return (
     <>
       {/* <div className="  col-sm-12 col-xs-12"> */}
@@ -16,24 +16,24 @@ const Subscribe = () => {
             <div className="text subscribe-text-style">
               Stay Updated with our latest news. We promise not to spam
             </div>
-            <div className="newsletter-form">
+            <div className="newsletter-form ">
               <form method="post">
-                <div className="form-group subscribe-display">
+                <div className="form-group  subscribe-display">
                   <input
                     className="input-email-style-subscribe"
                     type="email"
                     name="field-name"
                     placeholder="Your Email"
                     required=""
-					value={user.email}
-onChange={(e)=>{
-	setUser({...user, email:e.target.value})
-}}
+                    value={user.email}
+                    onChange={(e) => {
+                      setUser({ ...user, email: e.target.value })
+                    }}
                   />
 
-             <Link to="/home">     <button
+                  <Link to="/home">     <button
                     className="subscribe-button-style-subscribe"
-                   
+
                   >
                     Subscribe
                   </button>

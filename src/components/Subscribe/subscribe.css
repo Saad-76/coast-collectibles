@@ -93,4 +93,26 @@ padding-top: 20px;}
         outline: none;
     
     }
+    .input-email-style-subscribe{
+        height: 56px;
+        min-width: 100%;
+        margin-right: 16px;
+        margin-bottom: 0px;
+        padding: 16px 20px;
+        border: 0px none #000;
+        /* border: 0.5px solid #fff; */
+    
+        border-radius: 8px;
+        /* background-color: #262626; */
+        /* background: #091f6e; */
+        background: #020c31;
+    
+        color: white;
+        -webkit-transition: all 300ms ease;
+        transition: all 300ms ease;
+        font-family: 'Messina Sans Web', sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+        outline: none;
+    }
   }

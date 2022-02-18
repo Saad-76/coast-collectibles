@@ -19,8 +19,8 @@ const ComingSoon = () => {
     <>
       <div className="col-md-12 comingSoon-main-style">
         <div className="container">
-          <div className="col-md-6 comingSoon-content-style">
-            <h5>COMING SOON...</h5>
+          <div className="col-md-6 col-12 comingSoon-content-style">
+            <h5 className='font-set'>COMING SOON...</h5>
           </div>
           <div
             className="col-md-6 display-pc"

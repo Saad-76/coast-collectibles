@@ -11,6 +11,10 @@
     font-family: State_Secret;
 
 }
+
+.font-set{
+font-size: 150%;
+}
 .comingSoon-main-style{
   /* padding: 80px 0px; */
   padding-top: 80px;
@@ -198,3 +202,14 @@ body {
   .cube__face--bottom { transform: rotateX(-90deg) translateZ(100px); } 
   
   label { margin-right: 10px; }
+
+
+
+
+  @media only screen and (max-width: 900px) {
+    .font-set{
+      font-size: 90%;
+      }
+  }
+
+ 
