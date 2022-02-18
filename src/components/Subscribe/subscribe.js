@@ -1,11 +1,22 @@
-import { React, useState } from "react";
+import { ReactChild, useRef } from "react";
 import "./subscribe.css";
-import { Link } from "react-router-dom"
+import emailjs from "emailjs-com"
 
 const Subscribe = () => {
-  const [user, setUser] = useState({
-    email: "",
-  })
+  const form = useRef();
+
+  const sendEmail = (e) => {
+      e.preventDefault();
+  
+      emailjs.sendForm('service_09a54va', 'template_w8108kd', e.target, 'user_SqtsfRe3OXj67NLy3F4H9')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+        e.target.reset();
+    };
+
   return (
     <>
       {/* <div className="  col-sm-12 col-xs-12"> */}
@@ -17,28 +28,21 @@ const Subscribe = () => {
               Stay Updated with our latest news. We promise not to spam
             </div>
             <div className="newsletter-form ">
-              <form method="post">
+              <form ref={form} onSubmit={sendEmail}>
                 <div className="form-group  subscribe-display">
                   <input
                     className="input-email-style-subscribe"
                     type="email"
-                    name="field-name"
+                    name="message"
                     placeholder="Your Email"
                     required=""
-                    value={user.email}
-                    onChange={(e) => {
-                      setUser({ ...user, email: e.target.value })
-                    }}
                   />
 
-                  <Link to="/home">     <button
-                    className="subscribe-button-style-subscribe"
-
-                  >
-                    Subscribe
-                  </button>
-                  </Link>
-                  {/* <span className="fa fa-paper-plane-o"> */}
+                    <input className="subscribe-button-style-subscribe"  type="submit" value="Subscribe">
+                      {/* Subscribe */}
+                    </input>
+       
+    
                 </div>
               </form>
             </div>
