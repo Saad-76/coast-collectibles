@@ -100,6 +100,8 @@ nav {
 @media (max-width: 500px) {
   .navbar {
     /* background: rgb(215, 223, 239); */
+    background: #020a27;
+
   }
   .navbar-nav {
     border-top: 1px solid #fed136;

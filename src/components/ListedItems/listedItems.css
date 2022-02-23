@@ -189,3 +189,47 @@
     border-radius: 50px;
     height: 25px;
 } */
+.wraper{
+    height: 430px;
+    /* width: 320px; */
+}
+.gloves-images-comingSoon {
+    height: 335px;
+    /* object-fit: cover;
+    object-position: -192px 0; */
+    width: 250px;
+    border-radius: 9px;
+
+}
+.shirt-images-comingSoon{
+    height: 335px;
+    object-fit: cover;
+    border-radius: 9px;
+    width: 250px;
+}
+.joe-montana-comingSoon{
+    height: 330px;
+    width: 250px;
+    border-radius: 9px;
+
+}
+.old-coin-comingSoon{
+    height: 330px;
+    border-radius: 9px;
+
+    /* width: 250px; */
+}
+.coming-cards-cotent p{
+    text-align: center;
+    padding-top: 14px;
+}
+@media only screen and (max-width: 900px) {
+.coming-cards-cotent{
+    text-align: center;
+
+}
+.wraper{
+    text-align: center;
+}
+   
+     }

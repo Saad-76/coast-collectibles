@@ -15,7 +15,7 @@
     color: white;
 }
 .faq-top-head{
-    padding-top: 2px;
+    padding-top: 90px;
 
 }
 .css-1mxs4hs{
@@ -64,7 +64,7 @@
     /* border-bottom: 2px solid; */
 }
 .container-style-faq{
-    margin-top: 12px;
+    margin-bottom: 90px;
     /* padding: 0px 200px; */
     padding: 0px 418px;
 
@@ -104,6 +104,14 @@
 .css-vubbuv{
     color: white;
 }
+
+.terms-question a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);}
+
+
+
+
 @media only screen and (max-width: 1200px) {
     .container-style-faq{
         padding: 0px 140px;

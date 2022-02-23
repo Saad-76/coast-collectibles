@@ -1,0 +1,32 @@
+.Available-for-sale{
+    height: 337px;
+
+}
+.openSea-outer{
+    /* text-align: center; */
+display: flex;
+flex-direction: row;    
+align-items: center;
+justify-content: space-around;
+padding: 20px 0px;
+}
+.openSea-icon-style{
+    height: 50px;
+}
+.openSea-text{
+    font-family: State_Secret;
+
+}
+
+    
+    
+@media only screen and (max-width: 900px) {
+ .nft-card-outer{
+     text-align: center;
+ }
+ .card-nft-image{
+     height: 350px;
+ }
+
+
+  }

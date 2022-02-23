@@ -15,9 +15,8 @@ import GetStartedVideo from "../../assets/img/test-img/GetStartedVideo.mp4";
 import MindSectionInfo from "../mindSectionInfo/mindSectionInfo";
 import Subscribe from "../Subscribe/subscribe";
 import ComingSoon from "../ComingSoon/comingSoon";
-import FAQ from "../FAQ/faq"
-import PerspectiveCameraWrapper from "./prospectiveCamera"
-
+import FAQ from "../FAQ/faq";
+import PerspectiveCameraWrapper from "./prospectiveCamera";
 
 const GetStarted = () => {
   // let angle = 0;
@@ -39,7 +38,7 @@ const GetStarted = () => {
   //   back.style.transform = "rotateY(" + angle + "deg)";
   //   angle += 180;
   //   angle2 += 180;
-  
+
   // }
 
   // setInterval(() => anim(), 2000);
@@ -54,21 +53,26 @@ const GetStarted = () => {
 
   return (
     <>
+    <div className="getting-started-outer">
       <div className="top-pad">
         <InfoComponent
           // titleSm='About Us.'
           titleLg=" 	GET STARTED
-              "
-          text=" We have different assets in our collection 
               "
         />
       </div>
 
       <div className="row">
         <div className="container">
-          <div className=" rotating-card">
-            <PerspectiveCameraWrapper/>
+          <div className=" rotating-card rotating-nft">
+            <div className="rotating-nft-inner">
+              
+            <PerspectiveCameraWrapper />
 
+            </div>
+
+            <div className="rotating-nft-other-div">
+            </div>
             {/* <div class="card-style">
               <div id="front" class="card-side front ">
               </div>
@@ -77,42 +81,31 @@ const GetStarted = () => {
             </div> */}
           </div>
           <div className=" get-Started-content">
-            <h3> BROWSE OUR COLLECTION</h3>
-            <p>
+            <a href="https://opensea.io/CoastCollectibles?tab=created_collections" target="_blank">
+
+              <h3> BROWSE OUR COLLECTION</h3>{" "}
+            </a>
+            {/* <p>
               We have different assets in our collection ranging from Sports
               memorabilia and coins to trading cards.{" "}
-            </p>
+            </p> */}
             <h3> PICK YOUR NUMBER</h3>
-            <p>
+            {/* <p>
               Each fractionalised piece is uniquely numbered out of 500. Each
               one is different from the other.
-            </p>
-            <h3>OPENSEA</h3>
-            <p>
+            </p> */}
+            <h3>COMPLETE YOUR PURCHASE</h3>
+            {/* <p>
               OpenSea is the biggest NFT marketplace in the world. All of our
               collections are exclusively on OpenSea. Click this link to sign up
               now! (link to opensea/latest collection){" "}
-            </p>
+            </p> */}
           </div>
         </div>
       </div>
-      <div className="about-content-pad">
-        {/* <MindSectionInfo
-        img={<img src={Image} alt="monkey1"/>}
-
-        titleSmTwo=" Browse our collections"
-        contentTwo="We have different assets in our collection ranging from Sports memorabilia and coins to trading cards. "
-        titleSmThree=" Pick your number "
-        contentThree="Each fractionalised piece is uniquely numbered out of 500. Each one is different from the other. 
-"
-        titleSmFour=" OpenSea "
-        contentFour="OpenSea is the biggest NFT marketplace in the world. All of our collections are exclusively on OpenSea. Click this link to sign up now! (link to opensea/latest collection) 
-"
-      /> */}
+   
+     
       </div>
-      {/* <FAQ/> */}
-{/* <ComingSoon/>
-      <Subscribe /> */}
     </>
   );
 };

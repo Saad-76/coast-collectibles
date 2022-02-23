@@ -23,6 +23,8 @@ import FAQ from "../../components/FAQ/faq";
 
 import Subscribe from "../../components/Subscribe/subscribe";
 import ComingSoon from "../../components/ComingSoon/comingSoon";
+import Available from "../../components/AvailableForSale/available"
+import  SoldOut from "../../components/SoldOut/soldOut"
 
 
 import GetStarted from "../../components/getStarted/getStarted";
@@ -52,13 +54,24 @@ function Head({ Title }) {
   const { anchorId } = useParams();
   console.log(anchorId);
 
+
+
+
   const slideOpen = () => {
-    document.getElementById("mySidebar").style.display = "block";
+    // document.getElementById("mySidebar").style.display = "block";
+    if(   document.getElementById("mySidebar").style.display == "block"){
+      return document.getElementById("mySidebar").style.display = "none";
+    }
+    else{
+
+   return   document.getElementById("mySidebar").style.display = "block";
+
+    }
   };
 
-  const slideClose = () => {
-    document.getElementById("mySidebar").style.display = "none";
-  };
+  // const slideClose = () => {
+  //   document.getElementById("mySidebar").style.display = "none";
+  // };
 
   useEffect(() => {
     if (anchorId === "homey") homeRef.current.scrollIntoView();
@@ -97,11 +110,11 @@ function Head({ Title }) {
 
           <div className="collapse navbar-collapse" id="mySidebar">
             <ul className="navbar-nav ml-auto">
-              <li className="nav-item closeData">
+              {/* <li className="nav-item closeData">
                 <button className="nav-link close-button" onClick={slideClose}>
                   Close
                 </button>
-              </li>
+              </li> */}
 
               <li className="nav-item">
                 <AnchorLink className="nav-link" href="#home">
@@ -110,12 +123,12 @@ function Head({ Title }) {
               </li>
               <li className="nav-item">
                 <AnchorLink className="nav-link" href="#aboutus">
-                  Work
+                How we work
                 </AnchorLink>
               </li>
               <li className="nav-item">
                 <AnchorLink className="nav-link" href="#team">
-                  Collection
+                Products
                 </AnchorLink>
               </li>
               <li className="nav-item">
@@ -123,7 +136,11 @@ function Head({ Title }) {
                   Get Started
                 </AnchorLink>
               </li>
-
+              <li className="nav-item">
+                <AnchorLink className="nav-link" href="#faq">
+           FAQ
+                </AnchorLink>
+              </li>
               <li className="nav-item">
                 <AnchorLink className="nav-link" href="#contactus">
                   Contact Us
@@ -143,18 +160,22 @@ function Head({ Title }) {
         </section>
 
         <section id="team" style={{overflow:"hidden"}}>
+          <Available/>
           <ListedItemsContainer />
+          {/* <SoldOut/> */}
           
         </section>
         <section id="getstarted" style={{overflow:"hidden"}}>
 
           <GetStarted />
-          <FAQ/>
 
+        </section>
+        <section id="faq">
+          <FAQ/>
         </section>
 
         <section id="contactus" style={{overflow:"hidden"}}>
-          <ComingSoon/>
+          {/* <ComingSoon/> */}
           <Subscribe/>
           {/* <Subscribe /> */}
           <Footer />

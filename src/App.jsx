@@ -36,6 +36,9 @@ import Metaverse from "./components/mindMap/metaverse";
 import Seedling from "./components/mindMap/seedling";
 import Physical from "./components/mindMap/physical";
 import TeamSection from "./components/Team-Section/teamSection";
+import Terms from "./components/TermsAndCondition/terms"
+import MarketingPolicy from "./components/MarketingPolicy/marketingPolicy"
+import PrivacyPolicy from "./components/PrivacyPolicy/privacyPolicy"
 
 const App = () => {
   useEffect(() => {
@@ -74,6 +77,11 @@ const App = () => {
         <Route path="/metaverse" component={Metaverse} />
         <Route path="/vision" component={Vision} />
         <Route path="/teamSection" component={TeamSection} />
+        <Route path="/terms" component={Terms} />
+        <Route path="/marketingpolicy" component={MarketingPolicy} />
+
+<Route path="/privacypolicy" component={PrivacyPolicy}/>
+
 
         {/* <Redirect exact to="/home"/> */}
         <Redirect exact  to="/" />
